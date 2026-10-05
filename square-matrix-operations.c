@@ -1,6 +1,12 @@
 #include<stdio.h>
 int main(){
 
+// future steps???
+
+// Create a displayMatrix() function.
+// Create addMatrix() and subtractMatrix() functions.
+// Learn to validate an entire input line rather than relying solely on scanf().
+
 int rows, columns, i, j;
 
 char choice;
