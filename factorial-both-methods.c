@@ -1,14 +1,14 @@
 #include<stdio.h>
-factloop(int n){
-    int fact = 1, i;
+long long factloop(int n){
+    long long fact = 1, i;
     for (i = 1; i <= n; i++){
         fact = fact * i;
     }
     return fact;
 }
-factrec(int n){
-    int fact = 1;
-    return n * factrec(n-1);
+long long factrec(int n){
+    long long fact = 1;
+    return n * factrec(n - 1);
 }
 
 int main(){
@@ -16,7 +16,7 @@ int main(){
     int fact = 1;
     printf("Enter the number for factorial, (number should be from 1 to 20): ");
     scanf("%d", &n);
-    if (n < 0 || n > 20){
+    if (n < 1 || n > 20){
         printf("Wrong input. Enter value from 1 to 20, factorial is not defined.");
         return 1;
     }
@@ -25,10 +25,10 @@ int main(){
         printf("If you want factorial using recursive enter 2. \n");
         printf("Enter your choice: "); scanf("%d", &choice);
         if (choice = 1){
-            printf("The factorial of %d using loop is %d", n, factloop(n));
+            printf("The factorial of %d using loop is %lld", n, factloop(n));
         }
         else if (choice = 2){
-            printf("The factorial of %d using recursive is: %d", n, factrec(n));
+            printf("The factorial of %d using recursive is: %lld", n, factrec(n));
         }
         else {
             printf("Wrong input, restart program. \n");
