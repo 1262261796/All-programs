@@ -24,10 +24,10 @@ int main(){
         printf("If you want factorial using loop enter 1. \n");
         printf("If you want factorial using recursive enter 2. \n");
         printf("Enter your choice: "); scanf("%d", &choice);
-        if (choice = 1){
+        if (choice == 1){
             printf("The factorial of %d using loop is %lld", n, factloop(n));
         }
-        else if (choice = 2){
+        else if (choice == 2){
             printf("The factorial of %d using recursive is: %lld", n, factrec(n));
         }
         else {
